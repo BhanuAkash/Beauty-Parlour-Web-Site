@@ -1,0 +1,115 @@
+@media screen and (max-width:770px) {
+
+    .menu {
+        display: none;
+    }
+
+    #head .mobile-logo {
+        display: block;
+        width: 140px;
+        position: fixed;
+        z-index: 1;
+        top: 4%;
+        left: 2%;
+    }
+
+    .text {
+        width: 100%;
+        padding-top: 200px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-shadow: 0 8px 10px black;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 8px;
+        transition: 0.5s;
+        width: 35px;
+        height: 35px;
+        z-index: 10;
+    }
+
+    .mobile-menu div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-menu img {
+        width: 25px;
+        filter: invert(100%);
+    }
+
+    .mobile-menu div {
+        display: none;
+        transition: 1s;
+    }
+
+    .mobile-menu:hover {
+        height: 100vh;
+        right: 0;
+        top: 0;
+        width: 100px;
+    }
+
+    .mobile-menu:hover .menu-img {
+        display: none;
+    }
+
+    .mobile-menu:hover div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    /* first page end  */
+
+    /* second page start  */
+    .text-part {
+        width: 100%;
+    }
+
+    .text-part h1 {
+        font-size: 30px;
+    }
+    .follow-links img{
+        width: 250px;
+    }
+    footer .information {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    #service-page .left img {
+        display: none;
+    }
+    .sb-container {
+        gap: 30px;
+    }
+    .copy p {
+        font-size: 12px;
+    }
+
+    /* #service-page .left {
+        width: 50%;
+        height: 100%;
+    } */
+
+}
+
+/* second page end  */
+
+/* footer responsive start  */
+
