@@ -112,7 +112,7 @@ body {
 
 .text h1 {
     font-family: 'Kaushan Script', cursive;
-    font-size: 110px;
+    font-size: 8vw;
     margin-bottom: 20px;
     font-weight: 500;
     text-shadow: 10px 4px 10px black;
@@ -203,19 +203,19 @@ body {
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    padding: 30px;
-    /* border: 1px solid black; */
+    padding: 20px;
+    border: 1px solid black;
 }
 
 .sb-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .sb {
-    width: 400px;
+    width: 30vw;
     padding: 10px;
     height: 230px;
     display: flex;
@@ -229,6 +229,10 @@ body {
 .sb:nth-child(odd) {
     border-radius: 30px 0px 30px 0;
 }
+.sb:nth-child(even) {
+    border-radius: 0px 50px 0px 50px;
+
+}
 
 .sb:nth-child(4),
 .sb:nth-child(1) {
@@ -240,17 +244,14 @@ body {
     background: linear-gradient(90deg, white, rgba(128, 0, 122, 0.534));
 }
 
-.sb:nth-child(even) {
-    border-radius: 0px 50px 0px 50px;
 
-}
 
 .sb .desc {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .sb .desc h2 {
@@ -279,36 +280,26 @@ body {
     overflow: hidden;
     z-index: 1;
 }
+.sb .desc a .up{
+    top: 0;
+    left: 0;
+}
 
-.sb .desc a .up {
+.sb .desc a .up, .sb .desc a .down {
     width: 0%;
     height: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
     background: white;
     transition: 0.5s;
     z-index: -1;
-
-
 }
 
 .sb .desc a .down {
-    width: 0%;
-    height: 50%;
-    position: absolute;
     bottom: 0;
     right: 0;
-    background: white;
-    transition: 0.5s;
-    z-index: -1;
 }
 
-.sb .desc a:hover .up {
-    width: 100%;
-}
-
-.sb .desc a:hover .down {
+.sb .desc a:hover .up, .sb .desc a:hover .down  {
     width: 100%;
 }
 
@@ -327,12 +318,11 @@ body {
     padding: 30px;
     background: lightgray;
     border-radius: 30px;
-
-
 }
 
 .text-part {
     padding-left: 8%;
+    border: none solid red 10px;
 
 }
 
@@ -341,7 +331,6 @@ body {
     color: rgb(255, 0, 0);
     font-weight: 900;
     font-family: 'Handlee', cursive;
-
 }
 
 .text-part h1 {
@@ -357,7 +346,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-
 }
 
 .member-card {
@@ -381,11 +369,9 @@ body {
     position: absolute;
     backface-visibility: hidden;
     border-radius: 30px;
-
 }
 
 .front {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -403,8 +389,6 @@ body {
 .front p {
     color: rgb(200, 194, 194);
     text-shadow: 5px 5px 5px black;
-
-
 }
 
 .front button {
@@ -464,7 +448,6 @@ body {
     background: white;
     border-radius: 50%;
     box-shadow: 0 8px 10px rgba(121, 0, 173, 0.596);
-
 }
 
 .back .links a img {
@@ -510,7 +493,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .reviewbox-container {
@@ -660,7 +642,6 @@ footer .information p {
     color: white;
     /* background: red; */
     font-size: 20px;
-
 }
 
 .follow-links {
