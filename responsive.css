@@ -85,23 +85,48 @@
     .text-part h1 {
         font-size: 30px;
     }
-    .follow-links img{
+
+    .follow-links img {
         width: 250px;
     }
+
     footer .information {
         justify-content: flex-start;
         gap: 30px;
     }
+
     #service-page .left img {
         display: none;
     }
+
     .sb-container {
         gap: 30px;
     }
+
+    .sb {
+        width: 90vw;
+    }
+
     .copy p {
         font-size: 12px;
     }
+}
 
-    
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sb .desc h2 {
+        font-size: 15px;
+    }
 
+    .sb .desc a {
+        padding: 4px 10px;
+    }
+
+    #service-page .right .text-part h1 {
+        font-size: 40px;
+    }
+
+    /* section .container {
+        align-items: center;
+        justify-content: left;
+    } */
 }
